@@ -19,7 +19,7 @@ app.use(methodOverride('_method'));
 //use controllers
 app.use('/memes', memeController);
 
-
+app.use(express.static('public'))
 
 app.listen(3000, () => {
     console.log('listening to port 3000')
